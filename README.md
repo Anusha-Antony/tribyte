@@ -31,10 +31,6 @@ For Software:
 - [Bootstrap]
 
 
-For Hardware:
-- [CPU: 1-2 cores (e.g., Intel i3 or AMD Ryzen 3)]
-- [RAM: 2-4GB]
-- [Storage: 20-50GB SSD (Solid-State Drive) for faster access speeds]
 
 ### Implementation
 For Software:
@@ -48,14 +44,9 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-Add caption explaining what this shows
-
-![Screenshot2](Add screenshot 2 here with proper name)
-Add caption explaining what this shows
-
-![Screenshot3](Add screenshot 3 here with proper name)
-Add caption explaining what this shows
+<img width="1280" alt="readme-bnanner" src="index.png">
+<img width="1280" alt="readme-bnanner" src="faq.png">
+<img width="1280" alt="readme-bnanner" src="quiz.png">
 
 
 # Build Photos
@@ -73,16 +64,11 @@ Explain the final build
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-Explain what the video demonstrates
-
-# Additional Demos
-[Add any extra demo materials/links]
-
+[https://drive.google.com/file/d/1-1es46MxeXxWSqL1_rkI0WRxsu74EL69/view?usp=sharing]
+[This video helps how to use this website]
 ## Team Contributions
 - [Name 1]: [Anusha Antony]
 - [Name 2]: [Anargha V P]
 - [Name 3]: [Anamika A B]
 
----
-Made with ❤️ at TinkerHu
+
