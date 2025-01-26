@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Success Stories</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            padding: 40px;
+        }
+
+        .success-stories-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .success-story {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .success-story:hover {
+            transform: translateY(-10px);
+        }
+
+        .profile-pic {
+            width: 100px; /* Reduced the size of the profile picture */
+            height: 100px; /* Ensure it's a square */
+            border-radius: 50%; /* Circular image */
+            border: 3px solid #ecf0f1;
+            margin-bottom: 20px;
+            object-fit: cover; /* Ensures the image fits well within the circle */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.05); /* Adds a slight zoom effect on hover */
+        }
+
+        .success-story h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .story-content {
+            font-size: 16px;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #16a085;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .quote:hover {
+            color: #1abc9c;
+        }
+
+        .testimonial {
+            font-size: 16px;
+            color: #34495e;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #1abc9c;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: 500;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 30px;
+        }
+
+        .cta-button:hover {
+            background-color: #16a085;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 20px;
+            }
+
+            .success-story {
+                padding: 20px;
+            }
+
+            .success-story h3 {
+                font-size: 20px;
+            }
+
+            .story-content {
+                font-size: 14px;
+            }
+
+            .cta-button {
+                font-size: 18px;
+                padding: 12px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 style="text-align: center; font-size: 36px; color: #2c3e50; margin-bottom: 40px;">Our Success Stories</h2>
+
+        <div class="success-stories-wrapper">
+            <!-- Success Story 1 -->
+            <div class="success-story">
+                <img src="images/p1.jpg" alt="Profile Picture" class="profile-pic">
+                <h3>John Smith</h3>
+                <p class="story-content">
+                    "This platform revolutionized the way we approach business. Our growth has been exponential, and we couldn't have done it without this amazing team!"
+                </p>
+                <p class="quote">
+                    "Thanks to this platform, we were able to achieve growth that we never thought possible!"
+                </p>
+                <p class="testimonial">
+                    - Founder & CEO of ABC Corp
+                </p>
+            </div>
+
+            <!-- Success Story 2 -->
+            <div class="success-story">
+                <img src="images/client.jpg" alt="Profile Picture" class="profile-pic">
+                <h3>Jane Doe</h3>
+                <p class="story-content">
+                    "The tools and resources provided helped us streamline our operations and connect with clients in ways we hadn't thought of before."
+                </p>
+                <p class="quote">
+                    "I’m so grateful for the results we've achieved working with this platform. It's truly been a game-changer!"
+                </p>
+                <p class="testimonial">
+                    - Marketing Director of XYZ Ltd
+                </p>
+            </div>
+
+            <!-- Success Story 3 -->
+            <div class="success-story">
+                <img src="images/p3.jpg" alt="Profile Picture" class="profile-pic">
+                <h3>Michael Johnson</h3>
+                <p class="story-content">
+                    "With the insights and analytics, we were able to take informed decisions and grow our sales significantly in just a few months."
+                </p>
+                <p class="quote">
+                    "The impact of using this service has been incredible for our business—our revenue has increased by over 50%!"
+                </p>
+                <p class="testimonial">
+                    - Sales Manager at InnovateTech
+                </p>
+            </div>
+
+            <!-- Add more success stories as needed -->
+        </div>
+
+        <a href="join.html" class="cta-button">Join Our Success Story</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <!-- Google Fonts and Bootstrap for styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #f4f2f6,#d7cbdd);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .forgot-password-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+        .form-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #7c4bb7;
+            font-weight: 600;
+            font-size: 1.8rem;
+        }
+        .form-group label {
+            font-weight: 600;
+        }
+        .form-group input {
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus {
+            border-color: #4b6cb7;
+            outline: none;
+        }
+        .btn-primary {
+            background-color: #961cdd;
+            border-color:  #d3c7d9;
+            font-size: 1.1rem;
+            padding: 12px;
+            border-radius: 8px;
+            width: 100%;
+        }
+        .btn-primary:hover {
+            background-color: #3a5492;
+            border-color: #3a5492;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+        .footer a {
+            color: #4b6cb7;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .btn-link {
+            background: none;
+            border: none;
+            font-size: 1rem;
+            color: #4b6cb7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="forgot-password-container">
+        <h2 class="form-title">Forgot Password?</h2>
+        <p class="text-center">Enter your email address and we'll send you a link to reset your password.</p>
+
+        <form action="/reset_password" method="POST">
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-lg">Send Reset Link</button>
+            </div>
+        </form>
+
+        <div class="footer">
+            <p>Remember your password? <a href="/login">Login here</a></p>
+            <p>Need help? <a class="btn-link" href="contact.html">Contact Support</a></p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

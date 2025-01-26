@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Profile Card */
+        .profile-card {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            border-radius: 15px;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            color: white;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Hover Effect on Profile Card */
+        .profile-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Profile Header */
+        .profile-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 15px;
+            border: 5px solid white;
+        }
+
+        .profile-info h1 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .profile-info p {
+            font-size: 1rem;
+            opacity: 0.8;
+            margin-top: 5px;
+        }
+
+        /* Bio Section */
+        .bio {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .bio h2 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .bio p {
+            font-size: 1rem;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        /* Skills Section */
+        .skills {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .skills h2 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills ul li {
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover Effect on Skills */
+        .skills ul li:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Contact Section */
+        .contact h2 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .contact p {
+            font-size: 1rem;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile-card">
+            <div class="profile-header">
+                <img src="images/iconn.png" alt="Profile Picture" class="profile-pic">
+                <div class="profile-info">
+                    <h1>john Doe</h1>
+                    <p>Web Developer | Designer | Blogger</p>
+                    <p>Email: john.doe@example.com</p>
+                </div>
+            </div>
+
+            <!-- Bio Section -->
+            <div class="bio">
+                <h2>About Me</h2>
+                <p>I'm a passionate web developer with a love for creating interactive and user-friendly websites.
+
+            <!-- Skills Section -->
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Coding</li>
+                    <li>GK</li>
+                    <li>Aptitude</li>
+                    <li>Grammer</li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="contact">
+                <h2>Contact</h2>
+                <p>Feel free to reach out to me via email or connect with me on LinkedIn.</p>
+            </div>
+            <div class="back-link">
+                <a href="index.html">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

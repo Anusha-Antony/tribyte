@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Review</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 800px;
+            padding: 40px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #ecf0f1;
+            border-radius: 8px;
+            margin-top: 8px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 200px;
+            resize: none;
+        }
+
+        .submit-button {
+            display: inline-block;
+            background-color: #1abc9c;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: 500;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .submit-button:hover {
+            background-color: #16a085;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .back-link a {
+            color: #1abc9c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link a:hover {
+            color: #16a085;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Submit Your Review</h2>
+        <form action="#submit-review" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label for="review">Your Review</label>
+                <textarea id="review" name="review" required placeholder="Write your review here"></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Submit Review</button>
+        </form>
+
+        <div class="back-link">
+            <a href="index.html">Back to Home</a>
+        </div>
+    </div>
+
+</body>
+</html>

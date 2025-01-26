@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Development Registration</title>
+    <!-- Include Google Fonts and Bootstrap for styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+        .registration-form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        .form-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #604aaa;
+        }
+        .form-group label {
+            font-weight: 500;
+        }
+        .btn-primary {
+            background-color: #604aaa;
+            border-color: #604aaa;
+        }
+        .btn-primary:hover {
+            background-color: #604aaa;
+            border-color: #604aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="registration-form">
+            <h2 class="form-title">Skill Development Registration</h2>
+            <form action="/submit_registration" method="POST">
+                <!-- Personal Details Section -->
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" class="form-control" id="first-name" name="first_name" placeholder="Enter your first name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" class="form-control" id="last-name" name="last_name" placeholder="Enter your last name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                
+                <!-- Address Section -->
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" name="address" placeholder="Enter your address" required>
+                </div>
+
+                <!-- Skills Section -->
+<div class="form-group">
+    <label for="skills">Select Skills You Want to Improve</label>
+    <select class="form-control" id="skills" name="skills[]" multiple required onchange="updateTextField()">
+        <option value="Coding">coding</option>
+        <option value="General Knowledge">General Knowledge</option>
+        <option value="Aptitude">Aptitude</option>
+        <option value="English Grammer">English Grammer</option>
+        <option value="Interview Questions">Interview Questions</option>
+    </select>
+</div>
+
+<!-- Text field to display selected skills -->
+<div class="form-group">
+    <label for="selected-skills">Selected Skills</label>
+    <input type="text" class="form-control" id="selected-skills" readonly>
+</div>
+
+<script>
+    function updateTextField() {
+        // Get the selected options
+        const skillsSelect = document.getElementById("skills");
+        const selectedOptions = Array.from(skillsSelect.selectedOptions).map(option => option.value);
+        
+        // Update the text field with the selected skills
+        document.getElementById("selected-skills").value = selectedOptions.join(", ");
+    }
+</script>
+
+
+                <!-- Education Level Section -->
+                <div class="form-group">
+                    <label for="education">Highest Education Level</label>
+                    <select class="form-control" id="education" name="education" required>
+                        <option value="High School">Btech</option>
+                        <option value="Associate's Degree">Degree</option>
+                        <option value="Bachelor's Degree">Mtech</option>
+                        <option value="Master's Degree">MCA</option>
+                        
+                    </select>
+                </div>
+
+                
+                <!-- Submit Button -->
+                <div class="form-group text-center">
+                    <a href="firstpage.html">
+                        <button type="button" class="btn btn-primary btn-lg">Register</button>
+                      </a>
+                      
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS for better form behavior -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
