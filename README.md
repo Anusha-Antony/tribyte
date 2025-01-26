@@ -11,7 +11,7 @@
 - Member 3: Anargha V P - Vidya Academy of Science and technology,Thrissur
 
 ### Hosted Project Link
-https://anusha-antony.github.io/tribyte/
+https://anusha-antony.github.io/tribyte/firstpage.html
 
 ### Project Description
 TriByte is atrusted platform for mastering technical skills and unlocking new opportunities. Our mission is to empower individuals and professionals by providing access to world-class training in the most in-demand technical fields.
